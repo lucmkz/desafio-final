@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Extrato from '../extrato'
+import Gerente from '../gerente'
+
 const Body = () => {
   return (
     <section class="body">
@@ -27,55 +30,7 @@ const Body = () => {
               <p>vencimento 08/09</p>
             </div>
 
-            {/* <div class="saldo-extrato">
-              <ul class="saldo-lancamentos__menu tabela-header">
-              <li role="presentation" class="saldo-lancamentos__menu tabela-header">Data</li>
-              <li role="presentation" class="saldo-lancamentos__menu">Descrição</li>
-              <li role="presentation" class="saldo-lancamentos__menu">Valor (RS)</li>
-            </ul>
-                <div class="extrato-tabela">
-                  <ul class="saldo-lancamentos__menu tabela">
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">21/08</li>
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">SALDO</li>
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">1.000,00</li>
-                  </ul>
-                </div>
-                <div class="extrato-tabela">
-                  <ul class="saldo-lancamentos__menu tabela">
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">21/08</li>
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">Energia</li>
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">100,00</li>
-                  </ul>
-                </div>
-                <div class="extrato-tabela">
-                  <ul class="saldo-lancamentos__menu tabela">
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">21/08</li>
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">Michele</li>
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">100,00</li>
-                  </ul>
-                </div>
-                <div class="extrato-tabela">
-                  <ul class="saldo-lancamentos__menu tabela">
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">19/08</li>
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">Cinema</li>
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">40,00</li>
-                  </ul>
-                </div>
-                <div class="extrato-tabela">
-                  <ul class="saldo-lancamentos__menu tabela">
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">19/08</li>
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">Messias</li>
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">80,00</li>
-                  </ul>
-                </div>
-                <div class="extrato-tabela">
-                  <ul class="saldo-lancamentos__menu tabela">
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">17/08</li>
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">Internet</li>
-                    <li role="presentation" class="saldo-lancamentos__menu tabela">120,00</li>
-                  </ul>
-                </div>
-              </div> */}
+            <Extrato />
 
         </div>
         <div class="dados-user">
@@ -103,15 +58,11 @@ const Body = () => {
                     <span>Conta: 10258-8</span>
                     <span>CPF: 123.456.789-58</span>
                 </div>
+                
                 <div class="dados-user_others">
-                    <div>
-                        <h5 class="h5Size">Beltrano detal</h5>
-                        <div class="foto_beltrano"></div>
-                    </div>
-                    <span>Telefone: 9999-9999</span>
-                    <span>Celular: 99999-9999</span>
-                    <button>Enviar Menssagem</button>
+                    <Gerente />
                 </div>
+
             </div>
           </div>
 
