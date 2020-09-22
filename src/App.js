@@ -1,9 +1,17 @@
-import React from 'react';
+import React from "react";
+
+import Aside from "./components/aside";
+import Header from "./components/header";
+import Body from "./components/body";
+
+import './style.css'
 
 function App() {
   return (
-    <div className="App">
-      <h1>oi</h1>
+    <div>
+      <Header />
+      <Aside />
+      <Body />
     </div>
   );
 }
