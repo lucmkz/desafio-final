@@ -72,7 +72,7 @@ background-repeat: no-repeat;
   width: 20px;
   height: 20px;
   left: 13px;
-  /* background-image: url("../assets/credit-card.svg"); */
+  /* background-image: url("./assets/credit-card.png"); */
 background-repeat: no-repeat;  
 }
 
@@ -96,7 +96,7 @@ background-repeat: no-repeat;
   width: 20px;
   height: 27px;
   left: 13px;
-  /* background-image: url(../assets/lightbulb.svg); */
+  /* background-image: url(./assets/lightbulb.svg); */
   background-repeat: no-repeat;
   background-position: center;
   margin-top: -5px; 
@@ -152,7 +152,7 @@ background-repeat: no-repeat;
 }
 
 .header-iconeItau{
-  /* background-image: url("../assets/icon.png"); */
+  background-image: url("./assets/icon.png");
   width: 110px;
   height: 90px;
   background-repeat: no-repeat;
@@ -161,7 +161,7 @@ background-repeat: no-repeat;
 }
 
 .header-userInfos_personalite{
-  /* background-image: url('../assets/personalite.png'); */
+  background-image: url('./assets/personalite.png');
   width: 175px;
   height: 26px;
   background-repeat: no-repeat;
@@ -424,6 +424,7 @@ background-repeat: no-repeat;
 .dados-cartao__minha-conta{
   width: 200px;
   height: 20rem;
+  margin-bottom: 20px;
 }
 .dados-cartao__pagamentos{
   width: 200px;
@@ -441,11 +442,10 @@ background-repeat: no-repeat;
 
 .minha-conta, .pagamentos, .ultimas-transferencias{
   width: 528px;
-  height: 20rem;
   background: #F6F2EE;
-  /*border: solid 1px;*/
   border-radius: 10px;
   padding: 12px;
+  margin-bottom: 20px;
 }
 
 .dados-user {

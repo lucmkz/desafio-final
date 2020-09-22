@@ -26,7 +26,8 @@ const Body = () => {
               <h4 class="fatura-valor">R$ 100,00</h4>
               <p>vencimento 08/09</p>
             </div>
-            <div class="saldo-extrato">
+
+            {/* <div class="saldo-extrato">
               <ul class="saldo-lancamentos__menu tabela-header">
               <li role="presentation" class="saldo-lancamentos__menu tabela-header">Data</li>
               <li role="presentation" class="saldo-lancamentos__menu">Descrição</li>
@@ -74,7 +75,8 @@ const Body = () => {
                     <li role="presentation" class="saldo-lancamentos__menu tabela">120,00</li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
+
         </div>
         <div class="dados-user">
 
@@ -149,6 +151,7 @@ const Body = () => {
                     </div>
                   </div>
                 </div>
+                
                 <div class ="right_side_card">
                     <div class="saldo-extrato_pagamento">
                       <span class="pagamentos_span">Top pagamentos</span>
