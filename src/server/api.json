@@ -1,7 +1,7 @@
 {
   "clientes": [
     {
-      "clienteID": "asd23423-sad3211-ssd546ad",
+      "id": "asd23423-sad3211-ssd546ad",
       "clienteNome": "João Faria",
       "clienteEmail": "joao@mail.com",
       "clienteCPF": "222.222.222-22",
@@ -168,7 +168,7 @@
 
   "gerentes": [
     {
-      "gerenteId": "a343ass-9fd9gdf-sf46ds4f5s",
+      "id": "a343ass-9fd9gdf-sf46ds4f5s",
       "nome": "Agnaldo Martinez",
       "contato": {
         "celular": "+55 (19) 98768-1234",

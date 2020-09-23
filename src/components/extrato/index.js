@@ -1,56 +1,52 @@
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
+
+import { apiClientes } from "../../services/api";
 
 const Extrato = () => {
-  return <h1>osiaosioais</h1>;
+  const [cliente, setCliente] = useState();
+
+  useEffect(() => {
+    request();
+  }, []);
+
+  const request = useCallback(async () => {
+    const { data } = await apiClientes.get("/asd23423-sad3211-ssd546ad");
+    setCliente(data);
+  }, []);
+
+  return (
+    <div Nameclass="saldo-extrato">
+      <ul class="saldo-lancamentos__menu tabela-header">
+        <li role="presentation" class="saldo-lancamentos__menu tabela-header">
+          Movimentação
+        </li>
+        <li role="presentation" class="saldo-lancamentos__menu">
+          Operação
+        </li>
+        <li role="presentation" class="saldo-lancamentos__menu">
+          Valor (R$)
+        </li>
+      </ul>
+      {cliente?.contaCorrente?.movimentacao.slice(0, 20).map((iten) => (
+        <h1>
+          {
+            <div class="extrato-tabela">
+              <ul class="saldo-lancamentos__menu tabela">
+                <li role="presentation" class="saldo-lancamentos__menu tabela">
+                {iten.operacao} 
+                </li>
+                <li role="presentation" class="saldo-lancamentos__menu tabela">
+                {iten.action} 
+                </li>
+                <li role="presentation" class="saldo-lancamentos__menu tabela">
+                {iten.custo.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })} 
+                </li>
+              </ul>
+            </div>
+          }
+        </h1>
+      ))}
+    </div>
+  );
 };
 export default Extrato;
-
-// iv class="saldo-extrato">
-//               <ul class="saldo-lancamentos__menu tabela-header">
-//               <li role="presentation" class="saldo-lancamentos__menu tabela-header">Data</li>
-//               <li role="presentation" class="saldo-lancamentos__menu">Descrição</li>
-//               <li role="presentation" class="saldo-lancamentos__menu">Valor (RS)</li>
-//             </ul>
-//                 <div class="extrato-tabela">
-//                   <ul class="saldo-lancamentos__menu tabela">
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">21/08</li>
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">SALDO</li>
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">1.000,00</li>
-//                   </ul>
-//                 </div>
-//                 <div class="extrato-tabela">
-//                   <ul class="saldo-lancamentos__menu tabela">
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">21/08</li>
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">Energia</li>
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">100,00</li>
-//                   </ul>
-//                 </div>
-//                 <div class="extrato-tabela">
-//                   <ul class="saldo-lancamentos__menu tabela">
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">21/08</li>
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">Michele</li>
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">100,00</li>
-//                   </ul>
-//                 </div>
-//                 <div class="extrato-tabela">
-//                   <ul class="saldo-lancamentos__menu tabela">
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">19/08</li>
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">Cinema</li>
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">40,00</li>
-//                   </ul>
-//                 </div>
-//                 <div class="extrato-tabela">
-//                   <ul class="saldo-lancamentos__menu tabela">
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">19/08</li>
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">Messias</li>
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">80,00</li>
-//                   </ul>
-//                 </div>
-//                 <div class="extrato-tabela">
-//                   <ul class="saldo-lancamentos__menu tabela">
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">17/08</li>
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">Internet</li>
-//                     <li role="presentation" class="saldo-lancamentos__menu tabela">120,00</li>
-//                   </ul>
-//                 </div>
-//               </div>
