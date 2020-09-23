@@ -391,6 +391,13 @@ background-repeat: no-repeat;
   margin: 0;
 }
 
+.cartao_img{
+  background-image: url('./assets/cartao_credito.png');
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+}
+
 .saldo-lancamentos__limite--fatura-aberta h5{
   font-weight: bold;
   font-size: 18px;
